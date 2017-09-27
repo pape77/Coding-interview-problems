@@ -31,8 +31,15 @@ public class Path
 				i--;
 			}
 			
-			if(split.Length > 0 && split[split.Length-1].Length != 1) {this.CurrentPath += split[split.Length-1];}
-			if(this.CurrentPath.Length == 0){this.CurrentPath = "/";}
+			if(split.Length > 0 && split[split.Length-1].Length != 1) 
+			{
+				this.CurrentPath += split[split.Length-1];
+			}
+			
+			if(this.CurrentPath.Length == 0)
+			{
+				this.CurrentPath = "/";
+			}
 		}
 		else
 		{ 

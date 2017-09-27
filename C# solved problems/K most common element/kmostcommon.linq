@@ -15,8 +15,9 @@ public class Common
 			{
 				dicc[elem]++;
 			}
-			else {
-			dicc.Add(elem,1);
+			else 
+			{
+				dicc.Add(elem,1);
 			}
 		}
 		
@@ -28,7 +29,8 @@ public class Common
 		{
 			selectedValue = values.ElementAt(values.Count - 1);
 		}
-		else {
+		else 
+		{
 			selectedValue = values.ElementAt(k-1);
 		}
 		

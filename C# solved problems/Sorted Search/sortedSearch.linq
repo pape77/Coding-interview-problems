@@ -2,7 +2,6 @@
   <Namespace>System</Namespace>
 </Query>
 
-
 public class SortedSearch
 {
 
@@ -43,7 +42,10 @@ public class SortedSearch
 		{
 			for (int i = 0; i < sortedArray.Length; i++)
 			{
-				if (sortedArray[i] >= lessThan) { return i; }
+				if (sortedArray[i] >= lessThan) 
+				{ 
+					return i; 
+				}
 			}
 			return sortedArray.Length;
 		}

@@ -5,7 +5,7 @@
 
 public class TrainComposition
 {
-       public LinkedList<int> wagons = new LinkedList<int>();
+    public LinkedList<int> wagons = new LinkedList<int>();
 	
     public void AttachWagonFromLeft(int wagonId)
     {
@@ -25,25 +25,29 @@ public class TrainComposition
 			wagons.RemoveFirst();
 			return res;
 		}
-		else{
-		return -1;}
+		else
+		{
+			return -1;
+		}
     }
 
     public int DetachWagonFromRight()
     {
-      if(wagons.Count > 0)
+      	if(wagons.Count > 0)
 		{
 			var res = wagons.Last.Value;
 			wagons.RemoveLast();
 			return res;
 		}
-		else{
-		return -1;}
+		else
+		{
+			return -1;
+		}
     }
 
     public static void Main(string[] args)
     {
-               TrainComposition tree = new TrainComposition();
+        TrainComposition tree = new TrainComposition();
         tree.AttachWagonFromLeft(7);
         tree.AttachWagonFromLeft(13);
 		tree.AttachWagonFromLeft(14);
