@@ -1,0 +1,8 @@
+Given an array of integers with duplicates, return the Kth most common element in the array.
+
+For example:
+
+Given { 5, 4, 3, 2, 1, 5, 4, 3, 2, 5, 4, 3, 5, 4, 5 } and K=  2
+
+Since 5 appears 5 times, 4 appears 4 times, 3 appears 3 times, 2 appears 2 times and 1 appears 1 time, the 2nd most common element is 4.
+
